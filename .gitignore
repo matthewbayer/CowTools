@@ -1,4 +1,5 @@
 # Byte-compiled / optimized / DLL files
+*/__pycache__/
 __pycache__/
 *.py[cod]
 *$py.class
@@ -110,6 +111,10 @@ ENV/
 env.bak/
 venv.bak/
 
+# MacOS
+.DS_Store
+*/DS_Store
+
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -127,3 +132,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# VSCode
+.vscode/
+
+# Text backup files
+*.bak
+
+# Database
+*.sqlite3

@@ -44,6 +44,11 @@ Colors:
   width:35px;
 }
 
+.media {
+  display: flex;
+  flex-direction: row;
+}
+
 .addl_notes {
 	margin-top: 20px;
 }
@@ -60,15 +65,83 @@ Colors:
 	 margin-top:15px;
 }
 
-#txtEditor {
-	margin-bottom:15px;
+#suggestionSubmit {
+	max-width: 40%
+}
+
+.link-gray:link{
+	color:gray;
+	text-decoration: none
+}
+
+.link-gray:hover{
+	color:black;
+}
+
+ul a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#examplesAccordion{
+	max-width:1400px;
+	max-width:80%;
+}
+
+.form-box{
+	padding: 1.5rem;
+	margin-right: 0;
+	margin-left: 0;
+	border-style: solid;
+	border-color: #cccbcb;
+	border-width: 1px;
+	border-top-left-radius: 0.25rem;
+	border-top-right-radius: 0.25rem;
+	flex-direction: column;
+	background-color: #f5f5f5;
+}
+
+.custom-editor {
+	display:block !important;
+	min-width:500px !important;
+	max-width:750px !important;
+	max-width:100%;;
+	min-height:150px;
+	height:100%;
+	width:100% !important;
+}
+
+.custom-editor-sm {
+	display:inline-block!important;
+	min-width:200px !important;
+	max-width:200px !important;
+	max-width:100%;
+	min-height:50px;
+	max-height:50px;
+	height:100%;
+	width:100% !important;
+}
+
+#sidebar-wrapper{
+	width:25%;
+	margin-right:0;
+	display:inline-block;
+	margin-left:0;
+}
+
+#sidebar-wrapper .sidebar-header {
+	padding: 0.875rem 1.25rem;
+	font-size: 1.2rem;
+}
+
+.main{
+	display:inline-block;
 }
 
 .help-block{
 	display:inline-block;
 	padding-top:10px;
 }
-
 
 body,
 html {
@@ -709,7 +782,7 @@ input[type='checkbox'] {
 
 .navbar-custom .navbar-brand.logo-image img {
     width: 4.4375rem;
-	height: 1.75rem;
+		height: 1.75rem;
 }
 
 .navbar-custom .navbar-brand.logo-text {
@@ -855,7 +928,7 @@ input[type='checkbox'] {
 
 .header .header-content-app {
 	padding-top: 4rem;
-	padding-bottom: 2rem;
+	/*padding-bottom: 2rem;*/
 	text-align: center;
 }
 
