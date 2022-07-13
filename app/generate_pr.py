@@ -23,7 +23,7 @@ credential = ManagedIdentityCredential(managed_identity_client_id="****")
 msi_auth = MsiAuthentication()
 print("start workspace")
 ws = Workspace(subscription_id="****",
-            resource_group="FInalProject",
+            resource_group="="****",
             workspace_name="****",
             auth=msi_auth)
 #connect_str = os.getenv('AZURE_STORAGE_CONNECTION_STRING')
