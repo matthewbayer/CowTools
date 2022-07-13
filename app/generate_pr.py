@@ -19,16 +19,16 @@ import os
 from datetime import datetime
 
 print("start cred")
-credential = ManagedIdentityCredential(managed_identity_client_id="5d738578-badc-4506-805a-8a19c4054644")
+credential = ManagedIdentityCredential(managed_identity_client_id="****")
 msi_auth = MsiAuthentication()
 print("start workspace")
-ws = Workspace(subscription_id="9d325419-073c-4e8f-a44e-a0479cf3d9ac",
+ws = Workspace(subscription_id="****",
             resource_group="FInalProject",
-            workspace_name="5412-gpt2workspace",
+            workspace_name="****",
             auth=msi_auth)
 #connect_str = os.getenv('AZURE_STORAGE_CONNECTION_STRING')
 print("workspace done")
-AZURE_STORAGE_CONNECTION_STRING = 'DefaultEndpointsProtocol=https;AccountName=cs5412meb287;AccountKey=kOm8hJLfPMc+doOA5t+7zHiG9Fi/Zbuw4Lv0syyQVkEhM58uLCTfiOEKzHrfLw+zJba5CfmlTMva+AStOXm4wg==;EndpointSuffix=core.windows.net'
+AZURE_STORAGE_CONNECTION_STRING = 'DefaultEndpointsProtocol=https;AccountName=****;AccountKey=****;EndpointSuffix=core.windows.net'
 # Create the BlobServiceClient object which will be used to create a container client
 blob_service_client = BlobServiceClient.from_connection_string(AZURE_STORAGE_CONNECTION_STRING)
 print("blob done")
